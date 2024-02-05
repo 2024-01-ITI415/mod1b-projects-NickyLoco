@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 657.3, y: -6}
+  m_AnchoredPosition: {x: 535.2, y: -6}
   m_SizeDelta: {x: 256, y: 32}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &240884276
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -469,6 +469,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1 &1565629519
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,6 +785,14 @@ PrefabInstance:
     - target: {fileID: -8932504594435766773, guid: 0322bb42f3b78d84a9abbc0fcc5c82d8, type: 3}
       propertyPath: leftAndRightEdge
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8932504594435766773, guid: 0322bb42f3b78d84a9abbc0fcc5c82d8, type: 3}
+      propertyPath: chanceToChangeDirection
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8932504594435766773, guid: 0322bb42f3b78d84a9abbc0fcc5c82d8, type: 3}
+      propertyPath: secondsBetweenAppleDrops
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 698205259050339275, guid: 0322bb42f3b78d84a9abbc0fcc5c82d8, type: 3}
       propertyPath: m_IsKinematic

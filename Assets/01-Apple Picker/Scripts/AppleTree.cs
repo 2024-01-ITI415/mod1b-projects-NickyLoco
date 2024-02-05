@@ -4,45 +4,53 @@ using UnityEngine;
 public class AppleTree : MonoBehaviour {
     [Header("Set in Inspector")]
     // Prefab for instantiating apples
-    public GameObject   applePrefab;
- 
+    public GameObject applePrefab;
     // Speed at which the AppleTree moves
-    public float        speed = 1f;
- 
+    public float speed = 1f;
     // Distance where AppleTree turns around
-    public float        leftAndRightEdge = 10f;
- 
+    public float leftAndRightEdge = 10f;
     // Chance that the AppleTree will change di
-    public float        chanceToChangeDirection;
- 
+    public float chanceToChangeDirection;
     // Rate at which Apples will be instantiate
-    public float        secondsBetweenAppleDrop;
- 
-    void Start () {
-        // Dropping apples every second
-        Invoke( "DropApple", 2f );             
-    }
-    void DropApple() {
-        GameObject apple = Instantiate<GameObject>(	applePrefab	);
-        apple.transform.position = transform.position;
-        Invoke(	"DropApple", secondsBetweenAppleDrop );
+    public float secondsBetweenAppleDrops = 2f;
+
+    void Start()
+    {
+        // Dropping apples every two seconds
+        InvokeRepeating("DropApple", 2f, secondsBetweenAppleDrops);
     }
 
- 
-    void Update () {
-         // Basic Movement
-        Vector3 pos = transform.position;      
-        pos.x += speed * Time.deltaTime;       
+    void DropApple()
+    {
+        GameObject apple = Instantiate<GameObject>(applePrefab);
+        apple.transform.position = transform.position;
+    }
+
+    void Update()
+    {
+        // Basic Movement
+        Vector3 pos = transform.position;
+        pos.x += speed * Time.deltaTime;
         transform.position = pos;
-        // Changing Direction
-        if ( pos.x < -leftAndRightEdge ) {
-            //move right
+
+        // Changing Direction Randomly
+        if (pos.x < -leftAndRightEdge)
+        {
+            // move right
             speed = Mathf.Abs(speed);
-        } else if ( pos.x > leftAndRightEdge ) {
-            //move left
+        }
+        else if (pos.x > leftAndRightEdge)
+        {
+            // move left
             speed = -Mathf.Abs(speed);
         }
-    }       
+
+        // Randomly change direction
+        if (Random.value < chanceToChangeDirection)
+        {
+            speed *= -1; // Change direction
+        }
+    }
     void FixedUpdate() {
         // Changing Direction Randomly is now t
         if (Random.value < chanceToChangeDirection) {

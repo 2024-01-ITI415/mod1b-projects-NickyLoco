@@ -5,16 +5,21 @@ using UnityEngine.UI;
 
 public class HighScore : MonoBehaviour
 {
-    static	public	int	score	=	1000;	//	a
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    static public int score = 1000;
+    void Awake() {
+    //If the player high score already exists then read it
+    if (PlayerPrefs.HasKey("HighScore")) {
+    score = PlayerPrefs.GetInt("HighScore");
     }
-
-    // Update is called once per frame
+    //Assign the high score to HighScore
+    PlayerPrefs.SetInt("HighScore",	score);
+ }
     void Update() {
     Text gt	= this.GetComponent<Text>();
-    gt.text	= "High	Score: " +score;
-    }
+    gt.text	= "High Score: "+score;
+    // Update	the	PlayerPrefs	HighScore	if	necessary
+    if (score > PlayerPrefs.GetInt("HighScore")) {
+    PlayerPrefs.SetInt("HighScore",	score);
+  }
+  }
 }
