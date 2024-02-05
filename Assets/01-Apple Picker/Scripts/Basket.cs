@@ -1,4 +1,4 @@
- using	System.Collections.Generic;
+using	System.Collections.Generic;
  using	UnityEngine;
  using	UnityEngine.UI;	//	This	line	enables	use	of	uGUI	features.	//	a
  public	class	Basket	:	MonoBehaviour	{
@@ -12,7 +12,7 @@ public	Text	scoreGT;	//	a
  //	Set	the	starting	number	of	points	to	0
  scoreGT.text	=	"0";
  } 
- void	Update	()	{
+ void	Update()	{
  //	Get	the	current	screen	position	of	the	mouse	from	Input
  Vector3	mousePos2D	=	Input.mousePosition;	//	a
  //	The	Camera's	z	position	sets	how	far	to	push	the	mouse	into	3D
@@ -24,11 +24,11 @@ public	Text	scoreGT;	//	a
  pos.x	=	mousePos3D.x;
  this.transform.position	=	pos;
  }
-void	OnCollisionEnter(	Collision	coll	)	{	
+void OnCollisionEnter(Collision	coll)	{	
 //	Find	out	what	hit	this	basket
  GameObject	collidedWith	=	coll.gameObject;	
-if	(	collidedWith.tag	==	"Apple"	)	{	
-Destroy(	collidedWith	);	
+if (collidedWith.tag	==	"Apple")	{	
+Destroy(collidedWith);	
 //	Parse	the	text	of	the	scoreGT	into	an	int
  int	score	=	int.Parse(	scoreGT.text	);	//	d
  //	Add	points	for	catching	the	apple
