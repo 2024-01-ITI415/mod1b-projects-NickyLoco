@@ -27,11 +27,12 @@ using UnityEngine.UI;	//	a
     public	string	showing	= "Show Slingshot";	//	FollowCam	mode
  
     void Start()	{
-        S	=	this;	//	Define	the	Singleton
+        S =	this;	//	Define	the	Singleton
 
-        level	=	0;
-        levelMax	=	castles.Length;
+        level =	0;
+        levelMax = castles.Length;
         StartLevel();
+        uitButton.text = "Show Both";
     }
 
     void StartLevel()	{
