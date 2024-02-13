@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 1712668627251056275, guid: 14a977cf1de9ee24782ae5759dd2a1bf, type: 3}
-  velocityMult: 9
+  velocityMult: 8.75
   launchPoint: {fileID: 0}
   launchPos: {x: 0, y: 0, z: 0}
   projectile: {fileID: 0}
@@ -652,6 +652,8 @@ MonoBehaviour:
   uitButton: {fileID: 208636699}
   castlePos: {x: 50, y: -9.5, z: 0}
   castles:
+  - {fileID: 119553298359694995, guid: df1ea1c3cd9ae6e41bd9b8cbf07789de, type: 3}
+  - {fileID: 7260537747957085409, guid: 0321eb13eac72c8439e9186f0e175376, type: 3}
   - {fileID: 8102057256288840168, guid: be512ab5fa2493c4c988aa5eda53c094, type: 3}
   - {fileID: 8102057256288840168, guid: 699a763ebf45796498e8c15a795323b4, type: 3}
   level: 0
