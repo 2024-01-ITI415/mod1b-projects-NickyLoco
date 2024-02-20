@@ -60,7 +60,7 @@ MonoBehaviour:
   speed: 5
   leftAndRightEdge: 10
   chanceToChangeDirection: 0.00005
-  secondsBetweenBombDrops: 2
+  secondsBetweenBombDrops: 1.95
 --- !u!1001 &994098120945587589
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombPrefab: {fileID: 171380944520564100, guid: b4cdad446b57b22448dbdca1139d6e27, type: 3}
-  speed: 2
+  speed: 3
   leftAndRightEdge: 5
   chanceToChangeDirection: 0.00005
   secondsBetweenBombDrops: 2

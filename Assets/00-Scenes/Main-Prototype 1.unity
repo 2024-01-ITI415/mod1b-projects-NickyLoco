@@ -660,7 +660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Shields: {fileID: 5163184731759382262, guid: 5a5e4f6541ea917458615fbb0856df5b, type: 3}
   numBaskets: 10
-  basketLeftX: -23
+  basketLeftX: -14
   basketSpacingX: 9
   basketHeight: -9
   basketList: []
