@@ -673,9 +673,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lives: {fileID: 8830204958234473779, guid: 33f62c63f9f4dba4c87e01775f9420b6, type: 3}
-  numBaskets: 3
-  basketBottomY: -10
-  basketSpacingY: 2
+  numBaskets: 4
+  basketLeftX: -14
+  basketSpacingX: 9
+  basketHeight: -9
   basketList: []
 --- !u!1 &1019383434
 GameObject:

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bomb : MonoBehaviour
 {
   [Header("Set in Inspector")]
-public	static	float	bottomY	=	-5f;
+public	static	float	bottomY	=	-9f;
     // Update is called once per frame
     void Update()
   {
