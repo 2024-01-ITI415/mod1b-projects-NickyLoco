@@ -6,7 +6,7 @@ using	UnityEngine.SceneManagement;
 public class BombRules : MonoBehaviour
 {
     [Header("Set in Inspector")]
-    public GameObject basketPrefab;
+    public GameObject Lives;
     public int numBaskets = 3;
     public float basketBottomY = -14f;
     public float basketSpacingY	= 2f;
@@ -16,7 +16,7 @@ public class BombRules : MonoBehaviour
     {
     basketList = new List<GameObject>();
     for (int i=0; i<numBaskets; i++) {
-    GameObject tBasketGO = Instantiate<GameObject>(basketPrefab);
+    GameObject tBasketGO = Instantiate<GameObject>(Lives);
     Vector3	pos	= Vector3.zero;
     pos.y =	basketBottomY +	(basketSpacingY	* i);
     tBasketGO.transform.position = pos;

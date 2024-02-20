@@ -50,10 +50,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f1d179bc9f1764985957d131eb0bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombPrefab: {fileID: 0}
+  bombPrefab: {fileID: 171380944520564100, guid: b4cdad446b57b22448dbdca1139d6e27, type: 3}
   speed: 2
   leftAndRightEdge: 5
-  chanceToChangeDirection: 0
+  chanceToChangeDirection: 0.00005
   secondsBetweenBombDrops: 2
 --- !u!1001 &2145702950216778155
 PrefabInstance:
