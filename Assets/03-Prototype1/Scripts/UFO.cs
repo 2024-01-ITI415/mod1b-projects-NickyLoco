@@ -4,7 +4,7 @@ using UnityEngine;
 public class UFO : MonoBehaviour {
     [Header("Set in Inspector")]
     // Prefab for instantiating apples
-    public GameObject applePrefab;
+    public GameObject bombPrefab;
     // Speed at which the AppleTree moves
     public float speed = 1f;
     // Distance where AppleTree turns around
@@ -12,17 +12,17 @@ public class UFO : MonoBehaviour {
     // Chance that the AppleTree will change direction
     public float chanceToChangeDirection;
     // Rate at which Apples will be instantiate
-    public float secondsBetweenAppleDrops = 2f;
+    public float secondsBetweenBombDrops = 2f;
 
     void Start()
     {
         // Dropping apples every two seconds
-        InvokeRepeating("DropApple", 2f, secondsBetweenAppleDrops);
+        InvokeRepeating("DropApple", 2f, secondsBetweenBombDrops);
     }
 
     void DropApple()
     {
-        GameObject apple = Instantiate<GameObject>(applePrefab);
+        GameObject apple = Instantiate<GameObject>(bombPrefab);
         apple.transform.position = transform.position;
     }
 
