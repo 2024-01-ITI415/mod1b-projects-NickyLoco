@@ -89,7 +89,7 @@ using UnityEngine.UI;	//	a
         switch	(showing)	{
             case"Show Slingshot"	:
             FollowCam.POI	=	null;
-            uitButton.text	=	"Show Invasion";
+            uitButton.text	=	"Show Castle";
             break;
             case"Show Castle":
             FollowCam.POI	=	S.castle;

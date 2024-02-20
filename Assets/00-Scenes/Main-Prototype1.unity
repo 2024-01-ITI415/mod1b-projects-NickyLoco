@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e902bb5e54da3614ab7b6875503ff672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabProjectile: {fileID: 1712668627251056275, guid: 14a977cf1de9ee24782ae5759dd2a1bf, type: 3}
+  prefabProjectile: {fileID: 1712668627251056275, guid: 3dccf571603d7f2489af355e6b368b56, type: 3}
   velocityMult: 8.75
   launchPoint: {fileID: 0}
   launchPos: {x: 0, y: 0, z: 0}
@@ -672,7 +672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e4b11324646fa4aa1cd6b75891e172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lives: {fileID: 8830204958234473779, guid: 33f62c63f9f4dba4c87e01775f9420b6, type: 3}
+  Shields: {fileID: 5163184731759382262, guid: 5a5e4f6541ea917458615fbb0856df5b, type: 3}
   numBaskets: 4
   basketLeftX: -14
   basketSpacingX: 9
