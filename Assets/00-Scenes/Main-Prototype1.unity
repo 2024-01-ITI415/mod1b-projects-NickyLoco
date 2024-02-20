@@ -517,7 +517,6 @@ GameObject:
   - component: {fileID: 792234108}
   - component: {fileID: 792234107}
   - component: {fileID: 792234106}
-  - component: {fileID: 792234109}
   - component: {fileID: 792234110}
   - component: {fileID: 792234111}
   - component: {fileID: 792234112}
@@ -602,21 +601,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &792234109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792234105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 647adcd82beff464d872fbe1e549d74e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  easing: 0.05
-  minXY: {x: 0, y: 0}
-  camZ: 0
 --- !u!114 &792234110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,6 +638,8 @@ MonoBehaviour:
   castlePos: {x: 0, y: 0, z: 0}
   castles:
   - {fileID: 1008351366591210188, guid: 3239dbefe22dd724c98976d009d71a28, type: 3}
+  - {fileID: 1008351366591210188, guid: a6d7c2c9813a30241a9619af9b7d2e47, type: 3}
+  - {fileID: 1008351366591210188, guid: f2c49a25139e67f409dbc2f21454c63e, type: 3}
   level: 0
   levelMax: 0
   shotsTaken: 0
@@ -673,8 +659,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Shields: {fileID: 5163184731759382262, guid: 5a5e4f6541ea917458615fbb0856df5b, type: 3}
-  numBaskets: 4
-  basketLeftX: -14
+  numBaskets: 10
+  basketLeftX: -23
   basketSpacingX: 9
   basketHeight: -9
   basketList: []
